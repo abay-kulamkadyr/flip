@@ -1,0 +1,8 @@
+fun f(x: Integer): Integer =
+    if eq(x, 0) then
+        let y = 10 in y
+    else
+        let y = 20 in y;
+
+output f(0);
+output f(1);

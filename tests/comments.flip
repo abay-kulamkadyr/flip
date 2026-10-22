@@ -1,0 +1,3 @@
+// comment
+output concat("hi", " there"); // end
+output length("abc");

@@ -1,0 +1,13 @@
+// Should ignore this
+fun function ( x : Integer) : Integer =
+// Should ignore this as well
+if ge(x, 5) then // no more stuff here
+return add(34, x) else // huh?
+return x
+output // oh no!
+function(3)
+//
+;
+//
+//
+//

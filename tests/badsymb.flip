@@ -1,0 +1,2 @@
+fun f(x: List<Integer>): Integer =
+	return 0;
