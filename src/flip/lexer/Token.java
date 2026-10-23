@@ -2,9 +2,9 @@ package flip.lexer;
 
 public class Token {
 
-    private String value;
-    private int line;
-    private int column;
+    private final String value;
+    private final int line;
+    private final int column;
 
     public Token(String value, int line, int column) {
         this.value = value;
@@ -25,6 +25,6 @@ public class Token {
     }
 
     public String toString() {
-        return value + " (" + line + ", " + column +")";
+        return value + " (" + line + ", " + column + ")";
     }
 }

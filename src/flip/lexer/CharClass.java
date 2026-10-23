@@ -11,12 +11,10 @@ enum CharClass {
     ILLEGAL;
 
     static CharClass of(int c) {
-        return switch (c) {
-            case int ch when CharUtil.isValidLabelStart(ch) -> LABEL_START;
-            case int ch when CharUtil.isDigit(ch) -> DIGIT;
-            case int ch when CharUtil.isQuote(ch) -> QUOTE;
-            case int ch when CharUtil.isSymbol(ch) -> SYMBOL;
-            default -> ILLEGAL;
-        };
+        if (CharUtil.isValidLabelStart(c)) return LABEL_START;
+        if (CharUtil.isDigit(c)) return DIGIT;
+        if (CharUtil.isQuote(c)) return QUOTE;
+        if (CharUtil.isSymbol(c)) return SYMBOL;
+        return ILLEGAL;
     }
 }

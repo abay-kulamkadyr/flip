@@ -2,9 +2,9 @@ package flip;
 
 public class FlipException extends Exception {
 
-    private String msg;
-    private int line;
-    private int column;
+    private final String msg;
+    private final int line;
+    private final int column;
 
     public FlipException(String msg, int line, int column) {
         this.msg = msg;

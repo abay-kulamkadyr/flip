@@ -1,10 +1,7 @@
 package flip;
 
-import flip.lexer.*;
-//import flip.parser.*;
-//import flip.ast.*;
-//import flip.semanticanalyzer.*;
-//import flip.executor.*;
+import flip.lexer.Lexer;
+import flip.lexer.Token;
 
 import java.io.File;
 import java.io.IOException;
@@ -13,7 +10,7 @@ import java.util.List;
 
 public class Flip {
 
-    private File progFile;
+    private final File progFile;
 
     public Flip(File progFile) {
         this.progFile = progFile;
